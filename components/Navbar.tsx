@@ -16,7 +16,7 @@ export default function Navbar() {
 
         {/* Links de Navegação */}
         <div className="hidden md:flex items-center gap-10">
-          <Link href="/" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors">A Empresa</Link>
+          <Link href="/" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors">Home</Link>
           <Link href="/servicos" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors">Serviços</Link>
           <Link href="/catalogo" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors">Catálogo</Link>
           <Link href="/contato" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors">Contato</Link>
