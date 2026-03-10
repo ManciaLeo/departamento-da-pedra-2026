@@ -52,7 +52,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
         <p>© 2026 Departamento da Pedra. Todos os direitos reservados.</p>
-        <p className="mt-2">Desenvolvido com ❤️ por <span className="text-slate-400">Leo Mancia</span></p>
+        <p className="mt-2">Desenvolvido por <span className="text-slate-400">Leo Mancia</span></p>
       </div>
     </footer>
   );
