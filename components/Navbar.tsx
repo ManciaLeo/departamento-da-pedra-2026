@@ -1,24 +1,27 @@
 import Link from 'next/link';
-import Image from 'next/image'; // Agora precisamos importar o Image do Next.js
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/70 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <nav className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/70 backdrop-blur-md shadow-sm">
+      {/* Aumentei a altura para h-24 para acomodar a logo maior com elegância */}
+      <div className="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
         
-        {/* Logo Oficial com a imagem D.png */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-105">
+        {/* Logo Oficial Maior */}
+        <Link href="/" className="flex items-center gap-4 group">
+          {/* Caixa da logo aumentada para 75x75 pixels */}
+          <div className="relative w-[75px] h-[75px] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
             <Image 
               src="/D.png" 
               alt="Logo Departamento da Pedra" 
               fill
               className="object-contain"
-              priority // Carrega a logo instantaneamente
+              priority
             />
           </div>
-          <span className="font-bold text-xl tracking-tighter text-slate-900 hidden sm:block">
-            DEPARTAMENTO DA PEDRA
+          {/* Aumentei o texto para text-2xl para ficar proporcional à nova logo */}
+          <span className="font-bold text-2xl tracking-tighter text-slate-900 hidden sm:block">
+            
           </span>
         </Link>
 
@@ -34,7 +37,7 @@ export default function Navbar() {
         <Link 
           href="https://wa.me/5554996633724" 
           target="_blank"
-          className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-lg hover:shadow-slate-200"
+          className="bg-slate-900 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-lg hover:shadow-slate-200"
         >
           Orçamento Rápido
         </Link>
