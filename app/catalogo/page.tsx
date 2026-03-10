@@ -4,29 +4,93 @@ const categorias = [
   {
     titulo: "Mármores",
     itens: [
+      { nome: "Bege Bahia", src: "/imagens_produtos/Marmore/marmore-bege-bahia.png" },
+      { nome: "Branco Paraná", src: "/imagens_produtos/Marmore/marmore-branco-parana.png" },
+      { nome: "Branco Clássico", src: "/imagens_produtos/Marmore/marmore-branco.png" },
       { nome: "Carrara", src: "/imagens_produtos/Marmore/marmore-carrara.png" },
       { nome: "Crema Marfil", src: "/imagens_produtos/Marmore/marmore-crema-marfil.png" },
-      { nome: "Bege Bahia", src: "/imagens_produtos/Marmore/marmore-bege-bahia.png" },
-      { nome: "Verde Guatemala", src: "/imagens_produtos/Marmore/marmore-verde-guatemala.png" },
+      { nome: "Marrom Imperial", src: "/imagens_produtos/Marmore/marmore-marrom-imperial.png" },
+      { nome: "Nero Marquina", src: "/imagens_produtos/Marmore/marmore-nero-marquina.png" },
       { nome: "Travertino Romano", src: "/imagens_produtos/Marmore/marmore-travertino-romano.png" },
-      { nome: "Nero Marquina", src: "/imagens_produtos/Marmore/marmore-nero-marquina.png" }
+      { nome: "Verde Guatemala", src: "/imagens_produtos/Marmore/marmore-verde-guatemala.png" }
     ]
   },
   {
     titulo: "Granitos",
     itens: [
-      { nome: "Preto São Gabriel", src: "/imagens_produtos/Granito/granito-preto-sao-gabriel.png" },
+      { nome: "Amarelo Capri", src: "/imagens_produtos/Granito/Granito-amarelo-capri.png" },
+      { nome: "Amarelo Icaraí", src: "/imagens_produtos/Granito/granito-amarelo-icarai.png" },
+      { nome: "Amarelo Ornamental", src: "/imagens_produtos/Granito/granito-amarelo-ornamental.png" },
+      { nome: "Amarelo Vitória", src: "/imagens_produtos/Granito/granito-amarelo-vitoria.png" },
+      { nome: "Branco Ceará", src: "/imagens_produtos/Granito/granito-branco-ceara.png" },
       { nome: "Branco Dallas", src: "/imagens_produtos/Granito/granito-branco-dallas.png" },
+      { nome: "Branco Fortaleza", src: "/imagens_produtos/Granito/granito-branco-fortaleza.png" },
+      { nome: "Branco Itaúnas", src: "/imagens_produtos/Granito/granito-branco-itaunas.png" },
       { nome: "Café Imperial", src: "/imagens_produtos/Granito/granito-cafe-imperial.png" },
-      { nome: "Preto Absoluto", src: "/imagens_produtos/Granito/granito-preto-absoluto.png" }
+      { nome: "Cinza Andorinha", src: "/imagens_produtos/Granito/granito-cinza-andorinha.png" },
+      { nome: "Cinza Castello", src: "/imagens_produtos/Granito/granito-cinza-castello.png" },
+      { nome: "Cinza Corumbá", src: "/imagens_produtos/Granito/granito-cinza-corumba.png" },
+      { nome: "Cinza Ocre Itabira", src: "/imagens_produtos/Granito/granito-cinza-ocre-itabira.png" },
+      { nome: "Extreme White", src: "/imagens_produtos/Granito/granito-extreme-white.png" },
+      { nome: "Marrom Absoluto", src: "/imagens_produtos/Granito/granito-marrom-absoluto.png" },
+      { nome: "Marrom Guaíba", src: "/imagens_produtos/Granito/granito-marrom-guaiba.png" },
+      { nome: "Marrom Tabacco", src: "/imagens_produtos/Granito/granito-marrom-tabacco.png" },
+      { nome: "Preto Absoluto", src: "/imagens_produtos/Granito/granito-preto-absoluto.png" },
+      { nome: "Preto Florindo", src: "/imagens_produtos/Granito/granito-preto-florindo.png" },
+      { nome: "Preto Indiano", src: "/imagens_produtos/Granito/granito-preto-indiano.png" },
+      { nome: "Preto Negresco", src: "/imagens_produtos/Granito/granito-preto-negresco.png" },
+      { nome: "Preto São Gabriel Escovado", src: "/imagens_produtos/Granito/granito-preto-sao-gabriel-escovado.png" },
+      { nome: "Preto São Gabriel", src: "/imagens_produtos/Granito/granito-preto-sao-gabriel.png" },
+      { nome: "Preto Via Láctea", src: "/imagens_produtos/Granito/granito-preto-via-lactea.png" },
+      { nome: "Santa Cecília", src: "/imagens_produtos/Granito/granito-santa-cecilia.png" },
+      { nome: "Verde Pavão", src: "/imagens_produtos/Granito/granito-verde-pavao.png" },
+      { nome: "Verde Pérola", src: "/imagens_produtos/Granito/granito-verde-perola.png" },
+      { nome: "Verde Ubatuba", src: "/imagens_produtos/Granito/granito-verde-ubatubai.png" }
     ]
   },
   {
-    titulo: "Quartzitos e Especiais",
+    titulo: "Quartzos",
     itens: [
+      { nome: "Amarelo Liso", src: "/imagens_produtos/Quartzitos/Quartzo_amarelo-liso.png" },
+      { nome: "Amarelo Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_amarelo-stellar.png" },
+      { nome: "Azul Liso", src: "/imagens_produtos/Quartzitos/Quartzo_azul-liso.png" },
+      { nome: "Azul Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_azul_stellar.png" },
+      { nome: "Branco Liso", src: "/imagens_produtos/Quartzitos/Quartzo_branco.png" },
+      { nome: "Branco Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_branco-stellar.png" },
+      { nome: "Calacata", src: "/imagens_produtos/Quartzitos/Quartzo_calacata.png" },
       { nome: "Calacata Gold", src: "/imagens_produtos/Quartzitos/Quartzo_calacata_gold.png" },
-      { nome: "Stellar Vermelho", src: "/imagens_produtos/Quartzitos/Quartzo_vermelho_stellar.png" },
-      { nome: "Basalto Polido", src: "/imagens_produtos/pedras/Basalto_Polido.png" }
+      { nome: "Carrara", src: "/imagens_produtos/Quartzitos/Quartzo_carrara.png" },
+      { nome: "Cinza Liso", src: "/imagens_produtos/Quartzitos/Quartzo_cinza_liso.png" },
+      { nome: "Cinza Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_cinza_stellar.png" },
+      { nome: "Laranja Liso", src: "/imagens_produtos/Quartzitos/Quartzo_laranja_liso.png" },
+      { nome: "Laranja Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_laranja_stellar.png" },
+      { nome: "Marrom Liso", src: "/imagens_produtos/Quartzitos/Quartzo_marrom_liso.png" },
+      { nome: "Marrom Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_marrom_stellar.png" },
+      { nome: "Preto Liso", src: "/imagens_produtos/Quartzitos/Quartzo_preto_liso.png" },
+      { nome: "Preto Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_preto_stellar.png" },
+      { nome: "Verde Liso", src: "/imagens_produtos/Quartzitos/Quartzo_verde_liso.png" },
+      { nome: "Verde Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_verde_stellar.png" },
+      { nome: "Vermelho Liso", src: "/imagens_produtos/Quartzitos/Quartzo_vermelho_liso.png" },
+      { nome: "Vermelho Stellar", src: "/imagens_produtos/Quartzitos/Quartzo_vermelho_stellar.png" }
+    ]
+  },
+  {
+    titulo: "Quartzitos",
+    itens: [
+      { nome: "Donatello", src: "/imagens_produtos/Quartzitos/Quartzitos_donatello.png" },
+      { nome: "Kronos", src: "/imagens_produtos/Quartzitos/Quartzitos_kronos.png" },
+      { nome: "Montreaux", src: "/imagens_produtos/Quartzitos/Quartzitos_montreaux.png" },
+      { nome: "Perla Santana", src: "/imagens_produtos/Quartzitos/Quartzitos_perla_santana.png" },
+      { nome: "Prime Ariston", src: "/imagens_produtos/Quartzitos/Quartzitos_prime-ariston.png" },
+      { nome: "Wakanda", src: "/imagens_produtos/Quartzitos/Quartzitos_wakanda.png" }
+    ]
+  },
+  {
+    titulo: "Pedras Rústicas",
+    itens: [
+      { nome: "Ardósia Cinza Mineira", src: "/imagens_produtos/pedras/ARDOSIA-CINZA-MINEIRA.png" },
+      { nome: "Basalto Polido", src: "/imagens_produtos/pedras/Basalto_Polido.png" },
+      { nome: "Pedra Sabão", src: "/imagens_produtos/pedras/pedra-sabao.png" }
     ]
   }
 ];
