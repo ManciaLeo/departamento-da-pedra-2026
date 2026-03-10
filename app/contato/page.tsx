@@ -11,7 +11,7 @@ export default function Contato() {
   const enviarWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
     const numeroRodrigo = "5554996633724";
-    const texto = `Olá, Rodrigo! Meu nome é *${nome}*.%0AEstou entrando em contato pelo site.%0A%0A*Interesse:* ${interesse}%0A*Mensagem:* ${mensagem}`;
+    const texto = `Olá, Rodrigo! Meu nome é *${nome}*.%0AEstou a entrar em contacto pelo site.%0A%0A*Interesse:* ${interesse}%0A*Mensagem:* ${mensagem}`;
     window.open(`https://wa.me/${numeroRodrigo}?text=${texto}`, '_blank');
   };
 
@@ -29,13 +29,14 @@ export default function Contato() {
 
       <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         
-        {/* Lado Esquerdo - Informações e Mapa */}
+        {/* Lado Esquerdo - Informações e Mapa (Estilo Contepol) */}
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 h-full flex flex-col">
           <h2 className="text-2xl font-bold text-slate-800 mb-8 border-l-4 border-amber-500 pl-4">
-            Nossos Contatos
+            Os Nossos Contactos
           </h2>
           
           <div className="space-y-6 mb-10 flex-grow">
+            {/* WhatsApp */}
             <div className="flex items-start gap-4">
               <div className="bg-slate-900 p-3 rounded-full shrink-0">
                 <Image src="/imagens_produtos/icones/whatsapp_icone.png" width={24} height={24} alt="WhatsApp" className="brightness-0 invert" />
@@ -46,6 +47,7 @@ export default function Contato() {
               </div>
             </div>
 
+            {/* Email */}
             <div className="flex items-start gap-4">
               <div className="bg-slate-900 p-3 rounded-full shrink-0">
                 <Image src="/imagens_produtos/icones/email_icone.png" width={24} height={24} alt="Email" className="brightness-0 invert" />
@@ -56,6 +58,7 @@ export default function Contato() {
               </div>
             </div>
 
+            {/* Morada */}
             <div className="flex items-start gap-4">
               <div className="bg-slate-900 p-3 rounded-full shrink-0 flex items-center justify-center w-[48px] h-[48px]">
                 <span className="text-white font-bold">📍</span>
@@ -67,12 +70,11 @@ export default function Contato() {
             </div>
           </div>
 
-          {/* Mapa do Google Embutido */}
-          <div className="w-full h-64 rounded-xl overflow-hidden border border-slate-200">
+          {/* Mapa do Google Embutido - Padrão Contepol */}
+          <div className="w-full h-[300px] rounded-xl overflow-hidden border border-slate-200 shadow-inner relative">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113177.37894172445!2d-52.35515325608688!3d-27.63412571243171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e339121a812327%3A0xc3bbaad06db48eb5!2sErechim%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1709000000000!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="100%" 
+              src="https://maps.google.com/maps?q=Erechim,%20Rio%20Grande%20do%20Sul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              className="absolute top-0 left-0 w-full h-full"
               style={{ border: 0 }} 
               allowFullScreen={true} 
               loading="lazy" 
@@ -88,7 +90,7 @@ export default function Contato() {
           
           <form onSubmit={enviarWhatsApp} className="space-y-5">
             <div>
-              <label className="block text-sm font-semibold text-slate-300 mb-2">Seu Nome</label>
+              <label className="block text-sm font-semibold text-slate-300 mb-2">O Seu Nome</label>
               <input 
                 type="text" 
                 required
@@ -122,7 +124,7 @@ export default function Contato() {
                 onChange={(e) => setMensagem(e.target.value)}
                 rows={4}
                 className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors resize-none"
-                placeholder="Conte um pouco sobre o que você precisa..."
+                placeholder="Conte um pouco sobre o que precisa..."
               ></textarea>
             </div>
 
